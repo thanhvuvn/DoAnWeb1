@@ -92,8 +92,12 @@ h3 {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card {
-    width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 0 20px;
   }
 }
