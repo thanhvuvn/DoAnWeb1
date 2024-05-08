@@ -1,27 +1,69 @@
 /*--------------nav-------- */
 .navbar-nav {
   width: 100%;
+  display: flex;
   justify-content: space-evenly;
+  align-items: center; /* căn giữa các phần tử theo chiều dọc */
 }
+
 .navbar-nav .nav-item {
   text-align: center;
 }
 
-/* -------------- main--------------- */
+/* -----------card---------- */
+
+.w3-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.w3-container p {
+  text-align: center;
+}
+.w3-row h3 {
+  margin-left: 20px;
+  font-size: 3rem;
+}
+.w3-card-4 {
+  padding: 30px;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.w3-container p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.purchase-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.w3-row {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.w3-card-4:hover .purchase-button {
+  opacity: 1;
+}
+
+/* trên footer */
 li {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
-.hotro {
-  display: flex;
-  justify-content: space-evenly;
-}
-.goi li,
-.gopy li,
-.dangky li {
-  margin-left: -30px;
+
+li input {
+  padding: 10px 10px;
+  border-radius: 0 20px;
 }
 li i {
   background-color: red;
@@ -32,79 +74,31 @@ li i {
 .fa-solid.fa-phone {
   color: white;
 }
-/* ------------card-------------- */
-.card {
-  width: 320px;
-  height: 480px;
-  background-color: black;
-}
-.card-img {
-  width: 100%;
-}
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card-heart,
-.card-cart {
-  left: 20px;
-  font: 25px;
-  position: absolute;
-  cursor: pointer;
-}
-.card-cart {
-  left: unset;
-  right: 20px;
-}
-.card-title {
-  color: rgb(39, 192, 87);
-}
-.card-price {
-  color: white;
-}
-.card-title,
-.card-price {
-  font-size: 23px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn-group button {
-  background-color: rgb(39, 192, 87);
-  color: white;
-  border: none;
-  outline: none;
-
-  padding: 10px 25px;
-  border-radius: 5px;
-  margin-right: 5px;
-  transition: 0.5s ease;
-}
-
-.btn-group {
-  visibility: hidden;
-  opacity: 0;
-}
-.card:hover .btn-group {
-  visibility: visible;
-  opacity: 100;
-  transition: 0.5s;
-  transition-delay: 0.3s;
-}
-hr {
-  margin-left: 10%;
-  width: 80%;
-}
-/*------------- footer -------------- */
-.footer1 {
-  background-color: azure;
-}
-.footer {
+.fo p {
   display: flex;
   justify-content: space-evenly;
 }
-/* ------pagination-------- */
-.pagination {
-  margin-left: 50%;
+.fo li {
+  margin-left: 20%;
+}
+/* ----------footer--------- */
+footer {
+  background-color: beige;
+  margin-top: 20px;
+  padding: 30px 10px;
+}
+ul p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.horizontal-line {
+  margin-top: 30px;
+  margin-left: 4%;
+  width: 92%;
+  height: 1px;
+  background-color: black;
+}
+/* pagination */
+.pag {
+  margin-left: 45%;
 }
